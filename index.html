@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tenda</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./Screenshot from 2020-09-21 14-57-35.png">
   </head>
   <body>
     <section class="section-tenda">
@@ -23,16 +24,27 @@
         </form>
         <button class="btn">Log In</button>
 
-        <div class="pass">
-          <a href="" class=".desig">Forgot your Password ?</a>
-<p class="para">First, hold down the reset button for about 8 seconds and then
-            release it to reset your router. Second, set a new login password. >
-            Note: After the router is reset, you will have to reconfigure it for
-            accessing the internet.
-          </p>
+        <span class='add'>Forgot Your password ?</span>
+        <div class="para">
+          First, hold down the reset button for about 8 seconds and then release it to reset your router. Second, set a new login password. > Note: After the router is reset, you will have to reconfigure it for accessing the internet.
         </div>
-      </div>
+        <b id="login-caret" class="caret"></b>
+
+   </div>
     </section>
+    <script>
+
+
+
+document
+        .querySelector(".add")
+        .addEventListener("click", () =>
+          document.querySelector(".para").classList.toggle("show")
+       );
+
+
+
+    </script>
    
   </body>
 </html>

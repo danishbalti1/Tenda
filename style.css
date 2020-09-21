@@ -7,14 +7,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background: #f1f1f1;
 }
-.pass p {
-  display: none;
-}
 .container {
   display: flex;
   flex-direction: column;
   padding: 56px;
-  padding-left: 6rem;
 }
 .img {
   display: flex;
@@ -39,17 +35,18 @@ body {
 }
 .section-tenda {
   position: absolute;
-  top: 15%;
-  left: 30%;
-  box-shadow: 10px 10px 10px 10px #ccc;
+  top: 10%;
+  left: 35%;
+  bottom: 10;
+  box-shadow: 1px 1px 5px #ccc;
   line-height: 3rem;
   translate: transition(-50%, 50%);
 }
 input {
   padding: 16px 25px;
-  border: None;
-  width: 80%;
-  outline: None;
+  border-radius: 5px;
+  outline: none;
+  border: none;
 }
 .btn {
   padding: 16px 25px;
@@ -61,10 +58,36 @@ input {
   color: #c3c1be;
   font-size: 1rem;
 }
-.btn:hover {
+
+.add {
+}
+.add:hover {
   cursor: pointer;
 }
-a {
-  color: #212425;
-  text-decoration: none;
+
+.para {
+  position: absolute;
+  top: 84%;
+  line-height: 3rem;
+  translate: transition(-50%, 50%);
+  display: none;
+}
+.show {
+  display: block;
+}
+@media (max-width: 700px) {
+  .section-tenda {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: none;
+  }
+  input {
+    width: 100%;
+    padding: 19px 36px;
+  }
+  .container {
+    padding: 40px;
+  }
 }
