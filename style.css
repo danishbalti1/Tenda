@@ -5,7 +5,7 @@
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #f1f1f1;
+  background: white;
 }
 .container {
   display: flex;
@@ -20,49 +20,47 @@ body {
   border-radius: 6px;
 }
 .img img {
-  margin-top: 0.4rem;
-  width: 30px;
-  height: 30px;
-  margin-left: 1rem;
+  margin-top: 0.6rem;
+  width: 20px;
+  height: 20px;
+  margin-left: 0.5rem;
 }
 
 .logo {
   margin-top: 1rem;
   margin-bottom: 1.2rem;
-  margin-left: 5rem;
-  width: 45%;
-  height: 45%;
+  margin-left: 4rem;
+  width: 50%;
+  height: 50%;
 }
 .section-tenda {
   position: absolute;
-  top: 10%;
-  left: 35%;
+  top: 13%;
+  left: 37%;
   bottom: 10;
-  box-shadow: 1px 1px 5px #ccc;
+  box-shadow: rgb(194, 187, 176) 0px 0px 12px;
   line-height: 3rem;
   translate: transition(-50%, 50%);
 }
 input {
-  padding: 16px 25px;
+  padding: 13px 25px;
   border-radius: 5px;
   outline: none;
   border: none;
 }
 .btn {
-  padding: 16px 25px;
+  padding: 13px 25px;
   border-radius: 5px;
   margin-top: 2rem;
-  background: #a64a10;
+  background: #e3681a;
   outline: none;
   border: none;
-  color: #c3c1be;
-  font-size: 1rem;
+  color: white;
+  font-size: 1.1rem;
 }
-
 .add {
-}
-.add:hover {
   cursor: pointer;
+  color: rgb(182, 177, 177);
 }
 
 .para {
@@ -85,9 +83,12 @@ input {
   }
   input {
     width: 100%;
-    padding: 19px 36px;
+    padding: 14px 36px;
   }
   .container {
     padding: 40px;
+  }
+  .img img {
+    margin-top: 0.7rem;
   }
 }
